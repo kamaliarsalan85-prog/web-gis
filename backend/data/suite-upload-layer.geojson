@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "U1",
+      "properties": {
+        "OBJECTID": "U1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.45,
+          37.55
+        ]
+      }
+    }
+  ]
+}

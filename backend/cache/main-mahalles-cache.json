@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "etag": "v1",
+    "lastModified": "2026-09-23T07:29:15.313Z",
+    "updatedAt": 1790148555313
+  },
+  "data": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "m-1",
+        "properties": {
+          "id": "1",
+          "name": "District 1 - Azadi North",
+          "population": 42500,
+          "density_sqkm": 6800,
+          "green_coverage_pct": 28,
+          "safety_index": 8.7,
+          "avg_household_income": 38000
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                51.385,
+                35.693
+              ],
+              [
+                51.397,
+                35.693
+              ],
+              [
+                51.397,
+                35.688
+              ],
+              [
+                51.385,
+                35.688
+              ],
+              [
+                51.385,
+                35.693
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "m-2",
+        "properties": {
+          "id": "2",
+          "name": "District 2 - Ferdowsi South",
+          "population": 36200,
+          "density_sqkm": 7400,
+          "green_coverage_pct": 19,
+          "safety_index": 8.2,
+          "avg_household_income": 44000
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                51.385,
+                35.688
+              ],
+              [
+                51.397,
+                35.688
+              ],
+              [
+                51.397,
+                35.683
+              ],
+              [
+                51.385,
+                35.683
+              ],
+              [
+                51.385,
+                35.688
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

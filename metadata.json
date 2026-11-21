@@ -1,0 +1,8 @@
+{
+  "name": "GIS Platform",
+  "description": "Full-stack GIS geospatial mapping and data management platform",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

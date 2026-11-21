@@ -1,0 +1,222 @@
+{
+  "meta": {
+    "etag": "v1",
+    "lastModified": "2026-09-23T07:29:15.313Z",
+    "updatedAt": 1790148555313
+  },
+  "data": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "p-101",
+        "properties": {
+          "id": "101",
+          "parcel_code": "PC-2024-001",
+          "land_use": "Residential",
+          "area_sqm": 450,
+          "floors": 4,
+          "value_usd": 650000,
+          "owner": "Tech Capital Ltd",
+          "zone": "Zone 1-North",
+          "status": "Constructed"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                51.388,
+                35.691
+              ],
+              [
+                51.391,
+                35.691
+              ],
+              [
+                51.391,
+                35.6895
+              ],
+              [
+                51.388,
+                35.6895
+              ],
+              [
+                51.388,
+                35.691
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "p-102",
+        "properties": {
+          "id": "102",
+          "parcel_code": "PC-2024-002",
+          "land_use": "Commercial",
+          "area_sqm": 620,
+          "floors": 6,
+          "value_usd": 1200000,
+          "owner": "Grand Plaza Holdings",
+          "zone": "Zone 1-Central",
+          "status": "Active Commercial"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                51.3915,
+                35.691
+              ],
+              [
+                51.395,
+                35.691
+              ],
+              [
+                51.395,
+                35.6895
+              ],
+              [
+                51.3915,
+                35.6895
+              ],
+              [
+                51.3915,
+                35.691
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "p-103",
+        "properties": {
+          "id": "103",
+          "parcel_code": "PC-2024-003",
+          "land_use": "Green Space",
+          "area_sqm": 1100,
+          "floors": 0,
+          "value_usd": 400000,
+          "owner": "Municipal Parks Dept",
+          "zone": "Zone 1-Park",
+          "status": "Public Park"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                51.388,
+                35.689
+              ],
+              [
+                51.391,
+                35.689
+              ],
+              [
+                51.391,
+                35.687
+              ],
+              [
+                51.388,
+                35.687
+              ],
+              [
+                51.388,
+                35.689
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "p-104",
+        "properties": {
+          "id": "104",
+          "parcel_code": "PC-2024-004",
+          "land_use": "Educational",
+          "area_sqm": 850,
+          "floors": 3,
+          "value_usd": 800000,
+          "owner": "City Education Board",
+          "zone": "Zone 2-East",
+          "status": "Campus Active"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                51.3915,
+                35.689
+              ],
+              [
+                51.3955,
+                35.689
+              ],
+              [
+                51.3955,
+                35.687
+              ],
+              [
+                51.3915,
+                35.687
+              ],
+              [
+                51.3915,
+                35.689
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "p-105",
+        "properties": {
+          "id": "105",
+          "parcel_code": "PC-2024-005",
+          "land_use": "Residential",
+          "area_sqm": 520,
+          "floors": 5,
+          "value_usd": 750000,
+          "owner": "Skyline Residences",
+          "zone": "Zone 2-South",
+          "status": "Under Construction"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                51.388,
+                35.6865
+              ],
+              [
+                51.393,
+                35.6865
+              ],
+              [
+                51.393,
+                35.6845
+              ],
+              [
+                51.388,
+                35.6845
+              ],
+              [
+                51.388,
+                35.6865
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

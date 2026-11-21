@@ -1,0 +1,2547 @@
+[
+  {
+    "name": "tmp-register",
+    "status": 201,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Admin registered successfully",
+      "username": "suite_admin_1778609089316"
+    }
+  },
+  {
+    "name": "login",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Login successful",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDM2YmMxMWUzZTVlZGMwZTIxYTkxNyIsInJvbGUiOiJhZG1pbiIsInRvb2xzIjpbInN0YXRzIiwiZWRpdCIsImV4cG9ydCIsInNwYXRpYWwiLCJ2aXN1YWwiLCJuZXR3b3JrIiwiam9pbiIsIm1vZGVsaW5nIiwiZHJhdyIsImZpbHRlciIsInNlYXJjaCJdLCJsYXllcnMiOlsidGVzdCJdLCJpYXQiOjE3Nzg2MDkwODksImV4cCI6MTc3ODYxMjY4OX0.MS9nP0aPz5Gm8ghthmbSIRRrc-a83yMdM6i-RAvEDI0",
+      "role": "admin",
+      "tools": [
+        "stats",
+        "edit",
+        "export",
+        "spatial",
+        "visual",
+        "network",
+        "join",
+        "modeling",
+        "draw",
+        "filter",
+        "search"
+      ],
+      "layers": [
+        "test"
+      ]
+    }
+  },
+  {
+    "name": "users-list",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Users fetched successfully",
+      "users": [
+        {
+          "_id": "6a033fcccd01deef2c2556d5",
+          "username": "admin",
+          "role": "admin",
+          "tools": [
+            "stats",
+            "edit",
+            "export",
+            "spatial",
+            "visual",
+            "network",
+            "join",
+            "modeling",
+            "draw",
+            "filter",
+            "search"
+          ],
+          "layers": [
+            "test"
+          ],
+          "__v": 0
+        },
+        {
+          "_id": "6a036213d652b2461ea10256",
+          "username": "codex_admin_1778606610",
+          "role": "admin",
+          "tools": [
+            "stats",
+            "edit",
+            "export",
+            "spatial",
+            "visual",
+            "network",
+            "join",
+            "modeling",
+            "draw",
+            "filter",
+            "search"
+          ],
+          "layers": [
+            "test"
+          ],
+          "__v": 0
+        },
+        {
+          "_id": "6a0367e9b183a953cf069973",
+          "username": "suite_admin_1778608105472",
+          "role": "admin",
+          "tools": [
+            "stats",
+            "edit",
+            "export",
+            "spatial",
+            "visual",
+            "network",
+            "join",
+            "modeling",
+            "draw",
+            "filter",
+            "search"
+          ],
+          "layers": [
+            "test"
+          ],
+          "__v": 0
+        },
+        {
+          "_id": "6a0368d75e8bddb94e9daae4",
+          "username": "suite_admin_1778608342961",
+          "role": "admin",
+          "tools": [
+            "stats",
+            "edit",
+            "export",
+            "spatial",
+            "visual",
+            "network",
+            "join",
+            "modeling",
+            "draw",
+            "filter",
+            "search"
+          ],
+          "layers": [
+            "test"
+          ],
+          "__v": 0
+        },
+        {
+          "_id": "6a03696beee57b964864b44c",
+          "username": "suite_admin_1778608491219",
+          "role": "admin",
+          "tools": [
+            "stats",
+            "edit",
+            "export",
+            "spatial",
+            "visual",
+            "network",
+            "join",
+            "modeling",
+            "draw",
+            "filter",
+            "search"
+          ],
+          "layers": [
+            "test"
+          ],
+          "__v": 0
+        },
+        {
+          "_id": "6a036b2c36f357e1140881e5",
+          "username": "suite_admin_1778608940570",
+          "role": "admin",
+          "tools": [
+            "stats",
+            "edit",
+            "export",
+            "spatial",
+            "visual",
+            "network",
+            "join",
+            "modeling",
+            "draw",
+            "filter",
+            "search"
+          ],
+          "layers": [
+            "test"
+          ],
+          "__v": 0
+        },
+        {
+          "_id": "6a036bc11e3e5edc0e21a917",
+          "username": "suite_admin_1778609089316",
+          "role": "admin",
+          "tools": [
+            "stats",
+            "edit",
+            "export",
+            "spatial",
+            "visual",
+            "network",
+            "join",
+            "modeling",
+            "draw",
+            "filter",
+            "search"
+          ],
+          "layers": [
+            "test"
+          ],
+          "__v": 0
+        }
+      ]
+    }
+  },
+  {
+    "name": "layers-db",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Layers fetched successfully",
+      "layers": [
+        {
+          "name": "main-parcels",
+          "count": 0,
+          "storage": "external",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          },
+          "updatedAt": "2026-05-12T18:04:49.907Z"
+        },
+        {
+          "name": "main-mahalles",
+          "count": 0,
+          "storage": "external",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          },
+          "updatedAt": "2026-05-12T18:04:49.918Z"
+        },
+        {
+          "name": "main-mabar",
+          "count": 3,
+          "storage": "external",
+          "data": {
+            "type": "FeatureCollection",
+            "features": [
+              {
+                "type": "Feature",
+                "properties": {
+                  "mahalle_ID": "new_1778603526378_brbkf9",
+                  "OBJECTID": "new_1778603526378_brbkf9",
+                  "Name": "پلی‌گان جدید new_1778603526378_brbkf9",
+                  "Shape_Area": 176382.5109936653
+                },
+                "geometry": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [
+                        57.35041,
+                        37.476976
+                      ],
+                      [
+                        57.352555,
+                        37.474933
+                      ],
+                      [
+                        57.357531,
+                        37.477316
+                      ],
+                      [
+                        57.353756,
+                        37.480039
+                      ],
+                      [
+                        57.35041,
+                        37.476976
+                      ]
+                    ]
+                  ]
+                },
+                "id": "new_1778603526378_brbkf9"
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                  "mahalle_ID": "new_1778603555786_pt61v0",
+                  "OBJECTID": "new_1778603555786_pt61v0",
+                  "Name": "پلی‌گان جدید new_1778603555786_pt61v0",
+                  "Shape_Area": 23189.967661874245
+                },
+                "geometry": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [
+                        57.360933,
+                        37.482215
+                      ],
+                      [
+                        57.359732,
+                        37.479185
+                      ],
+                      [
+                        57.361319,
+                        37.479253
+                      ],
+                      [
+                        57.360933,
+                        37.482215
+                      ]
+                    ]
+                  ]
+                },
+                "id": "new_1778603555786_pt61v0"
+              },
+              {
+                "type": "Feature",
+                "id": "2000",
+                "geometry": {
+                  "coordinates": [
+                    [
+                      57.33,
+                      37.47
+                    ],
+                    [
+                      57.34,
+                      37.48
+                    ]
+                  ],
+                  "type": "LineString"
+                },
+                "properties": {
+                  "street_name": "Validation Street",
+                  "OBJECTID": 2000
+                }
+              }
+            ]
+          },
+          "updatedAt": "2026-05-12T18:04:49.923Z"
+        },
+        {
+          "name": "main-parcels",
+          "count": 0,
+          "storage": "db",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          },
+          "version": 1778608941802,
+          "updatedAt": "2026-05-12T18:02:21.802Z"
+        },
+        {
+          "name": "main-mahalles",
+          "count": 0,
+          "storage": "db",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          },
+          "version": 1778608941830,
+          "updatedAt": "2026-05-12T18:02:21.830Z"
+        },
+        {
+          "name": "main-mabar",
+          "count": 3,
+          "storage": "db",
+          "data": {
+            "type": "FeatureCollection",
+            "features": [
+              {
+                "type": "Feature",
+                "properties": {
+                  "mahalle_ID": "new_1778603526378_brbkf9",
+                  "OBJECTID": "new_1778603526378_brbkf9",
+                  "Name": "پلی‌گان جدید new_1778603526378_brbkf9",
+                  "Shape_Area": 176382.5109936653
+                },
+                "geometry": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [
+                        57.35041,
+                        37.476976
+                      ],
+                      [
+                        57.352555,
+                        37.474933
+                      ],
+                      [
+                        57.357531,
+                        37.477316
+                      ],
+                      [
+                        57.353756,
+                        37.480039
+                      ],
+                      [
+                        57.35041,
+                        37.476976
+                      ]
+                    ]
+                  ]
+                },
+                "id": "new_1778603526378_brbkf9"
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                  "mahalle_ID": "new_1778603555786_pt61v0",
+                  "OBJECTID": "new_1778603555786_pt61v0",
+                  "Name": "پلی‌گان جدید new_1778603555786_pt61v0",
+                  "Shape_Area": 23189.967661874245
+                },
+                "geometry": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [
+                        57.360933,
+                        37.482215
+                      ],
+                      [
+                        57.359732,
+                        37.479185
+                      ],
+                      [
+                        57.361319,
+                        37.479253
+                      ],
+                      [
+                        57.360933,
+                        37.482215
+                      ]
+                    ]
+                  ]
+                },
+                "id": "new_1778603555786_pt61v0"
+              },
+              {
+                "type": "Feature",
+                "id": "2000",
+                "geometry": {
+                  "coordinates": [
+                    [
+                      57.33,
+                      37.47
+                    ],
+                    [
+                      57.34,
+                      37.48
+                    ]
+                  ],
+                  "type": "LineString"
+                },
+                "properties": {
+                  "street_name": "Validation Street",
+                  "OBJECTID": 2000
+                }
+              }
+            ]
+          },
+          "version": 1778608941852,
+          "updatedAt": "2026-05-12T18:02:21.852Z"
+        }
+      ]
+    }
+  },
+  {
+    "name": "layers-local",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Layers fetched successfully",
+      "layers": [
+        {
+          "name": "main-mabar",
+          "count": 3,
+          "storage": "local",
+          "data": {
+            "type": "FeatureCollection",
+            "features": [
+              {
+                "type": "Feature",
+                "properties": {
+                  "mahalle_ID": "new_1778603526378_brbkf9",
+                  "OBJECTID": "new_1778603526378_brbkf9",
+                  "Name": "پلی‌گان جدید new_1778603526378_brbkf9",
+                  "Shape_Area": 176382.5109936653
+                },
+                "geometry": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [
+                        57.35041,
+                        37.476976
+                      ],
+                      [
+                        57.352555,
+                        37.474933
+                      ],
+                      [
+                        57.357531,
+                        37.477316
+                      ],
+                      [
+                        57.353756,
+                        37.480039
+                      ],
+                      [
+                        57.35041,
+                        37.476976
+                      ]
+                    ]
+                  ]
+                },
+                "id": "new_1778603526378_brbkf9"
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                  "mahalle_ID": "new_1778603555786_pt61v0",
+                  "OBJECTID": "new_1778603555786_pt61v0",
+                  "Name": "پلی‌گان جدید new_1778603555786_pt61v0",
+                  "Shape_Area": 23189.967661874245
+                },
+                "geometry": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [
+                        57.360933,
+                        37.482215
+                      ],
+                      [
+                        57.359732,
+                        37.479185
+                      ],
+                      [
+                        57.361319,
+                        37.479253
+                      ],
+                      [
+                        57.360933,
+                        37.482215
+                      ]
+                    ]
+                  ]
+                },
+                "id": "new_1778603555786_pt61v0"
+              },
+              {
+                "type": "Feature",
+                "id": "2000",
+                "geometry": {
+                  "coordinates": [
+                    [
+                      57.33,
+                      37.47
+                    ],
+                    [
+                      57.34,
+                      37.48
+                    ]
+                  ],
+                  "type": "LineString"
+                },
+                "properties": {
+                  "street_name": "Validation Street",
+                  "OBJECTID": 2000
+                }
+              }
+            ]
+          },
+          "version": 1778608941859.243,
+          "updatedAt": "2026-05-12T18:02:21.859Z"
+        },
+        {
+          "name": "suite-local-layer",
+          "count": 0,
+          "storage": "local",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          },
+          "version": 1778608941705.107,
+          "updatedAt": "2026-05-12T18:02:21.705Z"
+        },
+        {
+          "name": "suite-upload-layer",
+          "count": 1,
+          "storage": "local",
+          "data": {
+            "type": "FeatureCollection",
+            "features": [
+              {
+                "type": "Feature",
+                "id": "U1",
+                "properties": {
+                  "OBJECTID": "U1"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                    57.45,
+                    37.55
+                  ]
+                }
+              }
+            ]
+          },
+          "version": 1778608107129.065,
+          "updatedAt": "2026-05-12T17:48:27.129Z"
+        },
+        {
+          "name": "validation-local-layer",
+          "count": 1,
+          "storage": "local",
+          "data": {
+            "type": "FeatureCollection",
+            "features": [
+              {
+                "properties": {
+                  "OBJECTID": "9001",
+                  "Name": "Validation Feature"
+                },
+                "id": "9001",
+                "type": "Feature",
+                "geometry": {
+                  "coordinates": [
+                    57.33,
+                    37.47
+                  ],
+                  "type": "Point"
+                }
+              }
+            ]
+          },
+          "version": 1778606611257.4812,
+          "updatedAt": "2026-05-12T17:23:31.257Z"
+        }
+      ]
+    }
+  },
+  {
+    "name": "parcels-get",
+    "status": 200,
+    "ok": true,
+    "summary": null,
+    "body": {
+      "type": "FeatureCollection",
+      "features": []
+    }
+  },
+  {
+    "name": "mahalles-get",
+    "status": 200,
+    "ok": true,
+    "summary": null,
+    "body": {
+      "type": "FeatureCollection",
+      "features": []
+    }
+  },
+  {
+    "name": "mabar-get",
+    "status": 200,
+    "ok": true,
+    "summary": null,
+    "body": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {
+            "mahalle_ID": "new_1778603526378_brbkf9",
+            "OBJECTID": "new_1778603526378_brbkf9",
+            "Name": "پلی‌گان جدید new_1778603526378_brbkf9",
+            "Shape_Area": 176382.5109936653
+          },
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  57.35041,
+                  37.476976
+                ],
+                [
+                  57.352555,
+                  37.474933
+                ],
+                [
+                  57.357531,
+                  37.477316
+                ],
+                [
+                  57.353756,
+                  37.480039
+                ],
+                [
+                  57.35041,
+                  37.476976
+                ]
+              ]
+            ]
+          },
+          "id": "new_1778603526378_brbkf9"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "mahalle_ID": "new_1778603555786_pt61v0",
+            "OBJECTID": "new_1778603555786_pt61v0",
+            "Name": "پلی‌گان جدید new_1778603555786_pt61v0",
+            "Shape_Area": 23189.967661874245
+          },
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  57.360933,
+                  37.482215
+                ],
+                [
+                  57.359732,
+                  37.479185
+                ],
+                [
+                  57.361319,
+                  37.479253
+                ],
+                [
+                  57.360933,
+                  37.482215
+                ]
+              ]
+            ]
+          },
+          "id": "new_1778603555786_pt61v0"
+        },
+        {
+          "type": "Feature",
+          "id": "2000",
+          "geometry": {
+            "coordinates": [
+              [
+                57.33,
+                37.47
+              ],
+              [
+                57.34,
+                37.48
+              ]
+            ],
+            "type": "LineString"
+          },
+          "properties": {
+            "street_name": "Validation Street",
+            "OBJECTID": 2000
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "next-object-id",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "objectId": 1
+    }
+  },
+  {
+    "name": "next-mabar-object-id",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "objectId": 2001
+    }
+  },
+  {
+    "name": "parcel-create",
+    "status": 201,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Parcel created locally via fallback",
+      "feature": {
+        "type": "Feature",
+        "id": "1",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                57.33,
+                37.47
+              ],
+              [
+                57.34,
+                37.47
+              ],
+              [
+                57.34,
+                37.48
+              ],
+              [
+                57.33,
+                37.48
+              ],
+              [
+                57.33,
+                37.47
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "mahalle_ID": 501,
+          "landuse_name": "parcel",
+          "OBJECTID": 1
+        }
+      },
+      "layer": {
+        "name": "main-parcels",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "id": "1",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.33,
+                      37.47
+                    ],
+                    [
+                      57.34,
+                      37.47
+                    ],
+                    [
+                      57.34,
+                      37.48
+                    ],
+                    [
+                      57.33,
+                      37.48
+                    ],
+                    [
+                      57.33,
+                      37.47
+                    ]
+                  ]
+                ]
+              },
+              "properties": {
+                "mahalle_ID": 501,
+                "landuse_name": "parcel",
+                "OBJECTID": 1
+              }
+            }
+          ]
+        },
+        "updatedAt": "2026-05-12T18:04:50.034Z"
+      }
+    }
+  },
+  {
+    "name": "mahalle-create",
+    "status": 201,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Mahalle created locally via fallback",
+      "feature": {
+        "type": "Feature",
+        "id": "2",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                57.35,
+                37.47
+              ],
+              [
+                57.36,
+                37.47
+              ],
+              [
+                57.36,
+                37.48
+              ],
+              [
+                57.35,
+                37.48
+              ],
+              [
+                57.35,
+                37.47
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "Name": "Mahalle Test",
+          "OBJECTID": 2
+        }
+      },
+      "layer": {
+        "name": "main-mahalles",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "id": "2",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.35,
+                      37.47
+                    ],
+                    [
+                      57.36,
+                      37.47
+                    ],
+                    [
+                      57.36,
+                      37.48
+                    ],
+                    [
+                      57.35,
+                      37.48
+                    ],
+                    [
+                      57.35,
+                      37.47
+                    ]
+                  ]
+                ]
+              },
+              "properties": {
+                "Name": "Mahalle Test",
+                "OBJECTID": 2
+              }
+            }
+          ]
+        },
+        "updatedAt": "2026-05-12T18:04:50.058Z"
+      }
+    }
+  },
+  {
+    "name": "mabar-create",
+    "status": 201,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Mabar created successfully",
+      "feature": {
+        "type": "Feature",
+        "id": "2001",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              57.33,
+              37.47
+            ],
+            [
+              57.34,
+              37.48
+            ]
+          ]
+        },
+        "properties": {
+          "street_name": "Test St",
+          "OBJECTID": 2001
+        }
+      },
+      "layer": {
+        "name": "main-mabar",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "mahalle_ID": "new_1778603526378_brbkf9",
+                "OBJECTID": "new_1778603526378_brbkf9",
+                "Name": "پلی‌گان جدید new_1778603526378_brbkf9",
+                "Shape_Area": 176382.5109936653
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.35041,
+                      37.476976
+                    ],
+                    [
+                      57.352555,
+                      37.474933
+                    ],
+                    [
+                      57.357531,
+                      37.477316
+                    ],
+                    [
+                      57.353756,
+                      37.480039
+                    ],
+                    [
+                      57.35041,
+                      37.476976
+                    ]
+                  ]
+                ]
+              },
+              "id": "new_1778603526378_brbkf9"
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "mahalle_ID": "new_1778603555786_pt61v0",
+                "OBJECTID": "new_1778603555786_pt61v0",
+                "Name": "پلی‌گان جدید new_1778603555786_pt61v0",
+                "Shape_Area": 23189.967661874245
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.360933,
+                      37.482215
+                    ],
+                    [
+                      57.359732,
+                      37.479185
+                    ],
+                    [
+                      57.361319,
+                      37.479253
+                    ],
+                    [
+                      57.360933,
+                      37.482215
+                    ]
+                  ]
+                ]
+              },
+              "id": "new_1778603555786_pt61v0"
+            },
+            {
+              "type": "Feature",
+              "id": "2000",
+              "geometry": {
+                "coordinates": [
+                  [
+                    57.33,
+                    37.47
+                  ],
+                  [
+                    57.34,
+                    37.48
+                  ]
+                ],
+                "type": "LineString"
+              },
+              "properties": {
+                "street_name": "Validation Street",
+                "OBJECTID": 2000
+              }
+            },
+            {
+              "type": "Feature",
+              "id": "2001",
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    57.33,
+                    37.47
+                  ],
+                  [
+                    57.34,
+                    37.48
+                  ]
+                ]
+              },
+              "properties": {
+                "street_name": "Test St",
+                "OBJECTID": 2001
+              }
+            }
+          ]
+        },
+        "updatedAt": "2026-05-12T18:04:50.074Z"
+      }
+    }
+  },
+  {
+    "name": "parcel-update-geometry",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Parcel geometry updated successfully",
+      "feature": {
+        "type": "Feature",
+        "id": "1",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                57.331,
+                37.471
+              ],
+              [
+                57.341,
+                37.471
+              ],
+              [
+                57.341,
+                37.481
+              ],
+              [
+                57.331,
+                37.481
+              ],
+              [
+                57.331,
+                37.471
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "mahalle_ID": 501,
+          "landuse_name": "parcel",
+          "OBJECTID": 1
+        }
+      },
+      "layer": {
+        "name": "main-parcels",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "id": "1",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.331,
+                      37.471
+                    ],
+                    [
+                      57.341,
+                      37.471
+                    ],
+                    [
+                      57.341,
+                      37.481
+                    ],
+                    [
+                      57.331,
+                      37.481
+                    ],
+                    [
+                      57.331,
+                      37.471
+                    ]
+                  ]
+                ]
+              },
+              "properties": {
+                "mahalle_ID": 501,
+                "landuse_name": "parcel",
+                "OBJECTID": 1
+              }
+            }
+          ]
+        },
+        "updatedAt": "2026-05-12T18:04:50.109Z"
+      }
+    }
+  },
+  {
+    "name": "mahalle-update-geometry",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Mahalle geometry updated successfully",
+      "feature": {
+        "type": "Feature",
+        "id": "2",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                57.351,
+                37.471
+              ],
+              [
+                57.361,
+                37.471
+              ],
+              [
+                57.361,
+                37.481
+              ],
+              [
+                57.351,
+                37.481
+              ],
+              [
+                57.351,
+                37.471
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "Name": "Mahalle Test",
+          "OBJECTID": 2
+        }
+      },
+      "layer": {
+        "name": "main-mahalles",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "id": "2",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.351,
+                      37.471
+                    ],
+                    [
+                      57.361,
+                      37.471
+                    ],
+                    [
+                      57.361,
+                      37.481
+                    ],
+                    [
+                      57.351,
+                      37.481
+                    ],
+                    [
+                      57.351,
+                      37.471
+                    ]
+                  ]
+                ]
+              },
+              "properties": {
+                "Name": "Mahalle Test",
+                "OBJECTID": 2
+              }
+            }
+          ]
+        },
+        "updatedAt": "2026-05-12T18:04:50.130Z"
+      }
+    }
+  },
+  {
+    "name": "mabar-update-geometry",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Mabar geometry updated successfully",
+      "feature": {
+        "type": "Feature",
+        "id": "2001",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              57.331,
+              37.471
+            ],
+            [
+              57.342,
+              37.482
+            ]
+          ]
+        },
+        "properties": {
+          "street_name": "Test St",
+          "OBJECTID": 2001
+        }
+      },
+      "layer": {
+        "name": "main-mabar",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "mahalle_ID": "new_1778603526378_brbkf9",
+                "OBJECTID": "new_1778603526378_brbkf9",
+                "Name": "پلی‌گان جدید new_1778603526378_brbkf9",
+                "Shape_Area": 176382.5109936653
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.35041,
+                      37.476976
+                    ],
+                    [
+                      57.352555,
+                      37.474933
+                    ],
+                    [
+                      57.357531,
+                      37.477316
+                    ],
+                    [
+                      57.353756,
+                      37.480039
+                    ],
+                    [
+                      57.35041,
+                      37.476976
+                    ]
+                  ]
+                ]
+              },
+              "id": "new_1778603526378_brbkf9"
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "mahalle_ID": "new_1778603555786_pt61v0",
+                "OBJECTID": "new_1778603555786_pt61v0",
+                "Name": "پلی‌گان جدید new_1778603555786_pt61v0",
+                "Shape_Area": 23189.967661874245
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.360933,
+                      37.482215
+                    ],
+                    [
+                      57.359732,
+                      37.479185
+                    ],
+                    [
+                      57.361319,
+                      37.479253
+                    ],
+                    [
+                      57.360933,
+                      37.482215
+                    ]
+                  ]
+                ]
+              },
+              "id": "new_1778603555786_pt61v0"
+            },
+            {
+              "type": "Feature",
+              "id": "2000",
+              "geometry": {
+                "coordinates": [
+                  [
+                    57.33,
+                    37.47
+                  ],
+                  [
+                    57.34,
+                    37.48
+                  ]
+                ],
+                "type": "LineString"
+              },
+              "properties": {
+                "street_name": "Validation Street",
+                "OBJECTID": 2000
+              }
+            },
+            {
+              "type": "Feature",
+              "id": "2001",
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    57.331,
+                    37.471
+                  ],
+                  [
+                    57.342,
+                    37.482
+                  ]
+                ]
+              },
+              "properties": {
+                "street_name": "Test St",
+                "OBJECTID": 2001
+              }
+            }
+          ]
+        },
+        "updatedAt": "2026-05-12T18:04:50.156Z"
+      }
+    }
+  },
+  {
+    "name": "add-parcel-property",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Property added successfully via local fallback",
+      "feature": null,
+      "layer": {
+        "name": "main-parcels",
+        "data": null,
+        "updatedAt": "2026-05-12T18:04:50.183Z"
+      }
+    }
+  },
+  {
+    "name": "update-parcel-property",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Property updated successfully via local fallback",
+      "feature": null,
+      "layer": {
+        "name": "main-parcels",
+        "data": null,
+        "updatedAt": "2026-05-12T18:04:50.208Z"
+      }
+    }
+  },
+  {
+    "name": "delete-parcel-property",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Property deleted successfully via local fallback",
+      "feature": null,
+      "layer": {
+        "name": "main-parcels",
+        "data": null,
+        "updatedAt": "2026-05-12T18:04:50.231Z"
+      }
+    }
+  },
+  {
+    "name": "mahalle-add-field",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Property added successfully (mahalle)",
+      "feature": null,
+      "layer": {
+        "name": "main-mahalles",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "id": "2",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.351,
+                      37.471
+                    ],
+                    [
+                      57.361,
+                      37.471
+                    ],
+                    [
+                      57.361,
+                      37.481
+                    ],
+                    [
+                      57.351,
+                      37.481
+                    ],
+                    [
+                      57.351,
+                      37.471
+                    ]
+                  ]
+                ]
+              },
+              "properties": {
+                "Name": "Mahalle Test",
+                "OBJECTID": 2,
+                "Code": "M1"
+              }
+            }
+          ]
+        },
+        "updatedAt": "2026-05-12T18:04:50.258Z"
+      }
+    }
+  },
+  {
+    "name": "mahalle-update-field",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Properties updated successfully in main-mahalles",
+      "results": [
+        {
+          "key": "Code",
+          "status": "success",
+          "feature": {
+            "type": "Feature",
+            "id": "2",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    57.351,
+                    37.471
+                  ],
+                  [
+                    57.361,
+                    37.471
+                  ],
+                  [
+                    57.361,
+                    37.481
+                  ],
+                  [
+                    57.351,
+                    37.481
+                  ],
+                  [
+                    57.351,
+                    37.471
+                  ]
+                ]
+              ]
+            },
+            "properties": {
+              "Name": "Mahalle Test",
+              "OBJECTID": 2,
+              "Code": "M2"
+            }
+          },
+          "fallback": true
+        }
+      ],
+      "layer": {
+        "name": "main-mahalles",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "id": "2",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.351,
+                      37.471
+                    ],
+                    [
+                      57.361,
+                      37.471
+                    ],
+                    [
+                      57.361,
+                      37.481
+                    ],
+                    [
+                      57.351,
+                      37.481
+                    ],
+                    [
+                      57.351,
+                      37.471
+                    ]
+                  ]
+                ]
+              },
+              "properties": {
+                "Name": "Mahalle Test",
+                "OBJECTID": 2,
+                "Code": "M2"
+              }
+            }
+          ]
+        },
+        "updatedAt": "2026-05-12T18:04:50.279Z"
+      }
+    }
+  },
+  {
+    "name": "mahalle-delete-field",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Property deleted successfully (mahalle)",
+      "feature": null,
+      "layer": {
+        "name": "main-mahalles",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "id": "2",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.351,
+                      37.471
+                    ],
+                    [
+                      57.361,
+                      37.471
+                    ],
+                    [
+                      57.361,
+                      37.481
+                    ],
+                    [
+                      57.351,
+                      37.481
+                    ],
+                    [
+                      57.351,
+                      37.471
+                    ]
+                  ]
+                ]
+              },
+              "properties": {
+                "Name": "Mahalle Test",
+                "OBJECTID": 2
+              }
+            }
+          ]
+        },
+        "updatedAt": "2026-05-12T18:04:50.301Z"
+      }
+    }
+  },
+  {
+    "name": "mabar-add-field",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Mabar property added successfully",
+      "feature": {
+        "type": "Feature",
+        "id": "2001",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              57.331,
+              37.471
+            ],
+            [
+              57.342,
+              37.482
+            ]
+          ]
+        },
+        "properties": {
+          "street_name": "Test St",
+          "OBJECTID": 2001,
+          "speed": 50
+        }
+      },
+      "layer": {
+        "name": "main-mabar",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "mahalle_ID": "new_1778603526378_brbkf9",
+                "OBJECTID": "new_1778603526378_brbkf9",
+                "Name": "پلی‌گان جدید new_1778603526378_brbkf9",
+                "Shape_Area": 176382.5109936653
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.35041,
+                      37.476976
+                    ],
+                    [
+                      57.352555,
+                      37.474933
+                    ],
+                    [
+                      57.357531,
+                      37.477316
+                    ],
+                    [
+                      57.353756,
+                      37.480039
+                    ],
+                    [
+                      57.35041,
+                      37.476976
+                    ]
+                  ]
+                ]
+              },
+              "id": "new_1778603526378_brbkf9"
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "mahalle_ID": "new_1778603555786_pt61v0",
+                "OBJECTID": "new_1778603555786_pt61v0",
+                "Name": "پلی‌گان جدید new_1778603555786_pt61v0",
+                "Shape_Area": 23189.967661874245
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.360933,
+                      37.482215
+                    ],
+                    [
+                      57.359732,
+                      37.479185
+                    ],
+                    [
+                      57.361319,
+                      37.479253
+                    ],
+                    [
+                      57.360933,
+                      37.482215
+                    ]
+                  ]
+                ]
+              },
+              "id": "new_1778603555786_pt61v0"
+            },
+            {
+              "type": "Feature",
+              "id": "2000",
+              "geometry": {
+                "coordinates": [
+                  [
+                    57.33,
+                    37.47
+                  ],
+                  [
+                    57.34,
+                    37.48
+                  ]
+                ],
+                "type": "LineString"
+              },
+              "properties": {
+                "street_name": "Validation Street",
+                "OBJECTID": 2000
+              }
+            },
+            {
+              "type": "Feature",
+              "id": "2001",
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    57.331,
+                    37.471
+                  ],
+                  [
+                    57.342,
+                    37.482
+                  ]
+                ]
+              },
+              "properties": {
+                "street_name": "Test St",
+                "OBJECTID": 2001,
+                "speed": 50
+              }
+            }
+          ]
+        },
+        "updatedAt": "2026-05-12T18:04:50.321Z"
+      }
+    }
+  },
+  {
+    "name": "mabar-update-field",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Mabar property updated successfully",
+      "feature": {
+        "type": "Feature",
+        "id": "2001",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              57.331,
+              37.471
+            ],
+            [
+              57.342,
+              37.482
+            ]
+          ]
+        },
+        "properties": {
+          "street_name": "Test St",
+          "OBJECTID": 2001,
+          "speed": 60
+        }
+      },
+      "layer": {
+        "name": "main-mabar",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "mahalle_ID": "new_1778603526378_brbkf9",
+                "OBJECTID": "new_1778603526378_brbkf9",
+                "Name": "پلی‌گان جدید new_1778603526378_brbkf9",
+                "Shape_Area": 176382.5109936653
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.35041,
+                      37.476976
+                    ],
+                    [
+                      57.352555,
+                      37.474933
+                    ],
+                    [
+                      57.357531,
+                      37.477316
+                    ],
+                    [
+                      57.353756,
+                      37.480039
+                    ],
+                    [
+                      57.35041,
+                      37.476976
+                    ]
+                  ]
+                ]
+              },
+              "id": "new_1778603526378_brbkf9"
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "mahalle_ID": "new_1778603555786_pt61v0",
+                "OBJECTID": "new_1778603555786_pt61v0",
+                "Name": "پلی‌گان جدید new_1778603555786_pt61v0",
+                "Shape_Area": 23189.967661874245
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.360933,
+                      37.482215
+                    ],
+                    [
+                      57.359732,
+                      37.479185
+                    ],
+                    [
+                      57.361319,
+                      37.479253
+                    ],
+                    [
+                      57.360933,
+                      37.482215
+                    ]
+                  ]
+                ]
+              },
+              "id": "new_1778603555786_pt61v0"
+            },
+            {
+              "type": "Feature",
+              "id": "2000",
+              "geometry": {
+                "coordinates": [
+                  [
+                    57.33,
+                    37.47
+                  ],
+                  [
+                    57.34,
+                    37.48
+                  ]
+                ],
+                "type": "LineString"
+              },
+              "properties": {
+                "street_name": "Validation Street",
+                "OBJECTID": 2000
+              }
+            },
+            {
+              "type": "Feature",
+              "id": "2001",
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    57.331,
+                    37.471
+                  ],
+                  [
+                    57.342,
+                    37.482
+                  ]
+                ]
+              },
+              "properties": {
+                "street_name": "Test St",
+                "OBJECTID": 2001,
+                "speed": 60
+              }
+            }
+          ]
+        },
+        "updatedAt": "2026-05-12T18:04:50.343Z"
+      }
+    }
+  },
+  {
+    "name": "mabar-delete-field",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Mabar property deleted successfully",
+      "feature": {
+        "type": "Feature",
+        "id": "2001",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              57.331,
+              37.471
+            ],
+            [
+              57.342,
+              37.482
+            ]
+          ]
+        },
+        "properties": {
+          "street_name": "Test St",
+          "OBJECTID": 2001
+        }
+      },
+      "layer": {
+        "name": "main-mabar",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "mahalle_ID": "new_1778603526378_brbkf9",
+                "OBJECTID": "new_1778603526378_brbkf9",
+                "Name": "پلی‌گان جدید new_1778603526378_brbkf9",
+                "Shape_Area": 176382.5109936653
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.35041,
+                      37.476976
+                    ],
+                    [
+                      57.352555,
+                      37.474933
+                    ],
+                    [
+                      57.357531,
+                      37.477316
+                    ],
+                    [
+                      57.353756,
+                      37.480039
+                    ],
+                    [
+                      57.35041,
+                      37.476976
+                    ]
+                  ]
+                ]
+              },
+              "id": "new_1778603526378_brbkf9"
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "mahalle_ID": "new_1778603555786_pt61v0",
+                "OBJECTID": "new_1778603555786_pt61v0",
+                "Name": "پلی‌گان جدید new_1778603555786_pt61v0",
+                "Shape_Area": 23189.967661874245
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.360933,
+                      37.482215
+                    ],
+                    [
+                      57.359732,
+                      37.479185
+                    ],
+                    [
+                      57.361319,
+                      37.479253
+                    ],
+                    [
+                      57.360933,
+                      37.482215
+                    ]
+                  ]
+                ]
+              },
+              "id": "new_1778603555786_pt61v0"
+            },
+            {
+              "type": "Feature",
+              "id": "2000",
+              "geometry": {
+                "coordinates": [
+                  [
+                    57.33,
+                    37.47
+                  ],
+                  [
+                    57.34,
+                    37.48
+                  ]
+                ],
+                "type": "LineString"
+              },
+              "properties": {
+                "street_name": "Validation Street",
+                "OBJECTID": 2000
+              }
+            },
+            {
+              "type": "Feature",
+              "id": "2001",
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    57.331,
+                    37.471
+                  ],
+                  [
+                    57.342,
+                    37.482
+                  ]
+                ]
+              },
+              "properties": {
+                "street_name": "Test St",
+                "OBJECTID": 2001
+              }
+            }
+          ]
+        },
+        "updatedAt": "2026-05-12T18:04:50.363Z"
+      }
+    }
+  },
+  {
+    "name": "local-add-feature",
+    "status": 201,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Feature added successfully (new local layer created)",
+      "layer": {
+        "name": "suite-local-layer-1778609089316",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "id": "L1",
+              "properties": {
+                "OBJECTID": "L1",
+                "Name": "Local1"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  57.4,
+                  37.5
+                ]
+              }
+            }
+          ]
+        },
+        "version": 1778609090372.4104,
+        "updatedAt": "2026-05-12T18:04:50.372Z"
+      },
+      "feature": {
+        "type": "Feature",
+        "id": "L1",
+        "properties": {
+          "OBJECTID": "L1",
+          "Name": "Local1"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            57.4,
+            37.5
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "local-update-feature",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Feature updated successfully",
+      "feature": {
+        "type": "Feature",
+        "id": "L1",
+        "properties": {
+          "OBJECTID": "L1",
+          "Name": "Local2"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            57.41,
+            37.51
+          ]
+        }
+      },
+      "layer": {
+        "name": "suite-local-layer-1778609089316",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "id": "L1",
+              "properties": {
+                "OBJECTID": "L1",
+                "Name": "Local2"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  57.41,
+                  37.51
+                ]
+              }
+            }
+          ]
+        },
+        "version": 1778609090383.4023,
+        "updatedAt": "2026-05-12T18:04:50.383Z"
+      }
+    }
+  },
+  {
+    "name": "local-delete-feature",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Feature deleted successfully"
+    }
+  },
+  {
+    "name": "add-layer",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Layer added successfully",
+      "layer": {
+        "name": "suite-added-layer-1778609089316",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "id": "A1",
+              "properties": {
+                "OBJECTID": "A1"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  57.42,
+                  37.52
+                ]
+              }
+            }
+          ]
+        },
+        "version": 1778609090404.399,
+        "updatedAt": "2026-05-12T18:04:50.404Z"
+      }
+    }
+  },
+  {
+    "name": "update-layers",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Layers updated successfully",
+      "updated": [
+        "suite-added-layer-1778609089316"
+      ]
+    }
+  },
+  {
+    "name": "force-update-layers",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Layers updated successfully",
+      "updated": [
+        "suite-added-layer-1778609089316"
+      ]
+    }
+  },
+  {
+    "name": "upload",
+    "status": 201,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Layer uploaded successfully (new local layer created)",
+      "layer": {
+        "name": "suite-upload-layer-1778609089316",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "id": "U1",
+              "properties": {
+                "OBJECTID": "U1"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  57.45,
+                  37.55
+                ]
+              }
+            }
+          ]
+        },
+        "version": 1778609090450.4082,
+        "updatedAt": "2026-05-12T18:04:50.450Z"
+      }
+    }
+  },
+  {
+    "name": "delete-upload-layer",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Layer deleted successfully"
+    }
+  },
+  {
+    "name": "delete-layer",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Layer deleted successfully"
+    }
+  },
+  {
+    "name": "parcel-delete",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Parcel deleted successfully",
+      "feature": {
+        "parcel_id": 1
+      },
+      "layer": {
+        "name": "main-parcels",
+        "data": {
+          "type": "FeatureCollection",
+          "features": []
+        },
+        "updatedAt": "2026-05-12T18:04:50.503Z"
+      }
+    }
+  },
+  {
+    "name": "mahalle-delete",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Mahalle deleted successfully",
+      "feature": {
+        "mahalle_id": 2
+      },
+      "layer": {
+        "name": "main-mahalles",
+        "data": {
+          "type": "FeatureCollection",
+          "features": []
+        },
+        "updatedAt": "2026-05-12T18:04:50.527Z"
+      }
+    }
+  },
+  {
+    "name": "mabar-delete",
+    "status": 200,
+    "ok": true,
+    "summary": "success",
+    "body": {
+      "status": "success",
+      "message": "Mabar deleted successfully",
+      "feature": {
+        "mabar_id": 2001
+      },
+      "layer": {
+        "name": "main-mabar",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "mahalle_ID": "new_1778603526378_brbkf9",
+                "OBJECTID": "new_1778603526378_brbkf9",
+                "Name": "پلی‌گان جدید new_1778603526378_brbkf9",
+                "Shape_Area": 176382.5109936653
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.35041,
+                      37.476976
+                    ],
+                    [
+                      57.352555,
+                      37.474933
+                    ],
+                    [
+                      57.357531,
+                      37.477316
+                    ],
+                    [
+                      57.353756,
+                      37.480039
+                    ],
+                    [
+                      57.35041,
+                      37.476976
+                    ]
+                  ]
+                ]
+              },
+              "id": "new_1778603526378_brbkf9"
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "mahalle_ID": "new_1778603555786_pt61v0",
+                "OBJECTID": "new_1778603555786_pt61v0",
+                "Name": "پلی‌گان جدید new_1778603555786_pt61v0",
+                "Shape_Area": 23189.967661874245
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      57.360933,
+                      37.482215
+                    ],
+                    [
+                      57.359732,
+                      37.479185
+                    ],
+                    [
+                      57.361319,
+                      37.479253
+                    ],
+                    [
+                      57.360933,
+                      37.482215
+                    ]
+                  ]
+                ]
+              },
+              "id": "new_1778603555786_pt61v0"
+            },
+            {
+              "type": "Feature",
+              "id": "2000",
+              "geometry": {
+                "coordinates": [
+                  [
+                    57.33,
+                    37.47
+                  ],
+                  [
+                    57.34,
+                    37.48
+                  ]
+                ],
+                "type": "LineString"
+              },
+              "properties": {
+                "street_name": "Validation Street",
+                "OBJECTID": 2000
+              }
+            }
+          ]
+        },
+        "updatedAt": "2026-05-12T18:04:50.551Z"
+      }
+    }
+  }
+]

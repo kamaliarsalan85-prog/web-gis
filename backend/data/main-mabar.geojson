@@ -1,0 +1,133 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mahalle_ID": "new_1778603526378_brbkf9",
+        "OBJECTID": "new_1778603526378_brbkf9",
+        "Name": "پلی‌گان جدید new_1778603526378_brbkf9",
+        "Shape_Area": 176382.5109936653
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              57.35041,
+              37.476976
+            ],
+            [
+              57.352555,
+              37.474933
+            ],
+            [
+              57.357531,
+              37.477316
+            ],
+            [
+              57.353756,
+              37.480039
+            ],
+            [
+              57.35041,
+              37.476976
+            ]
+          ]
+        ]
+      },
+      "id": "new_1778603526378_brbkf9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mahalle_ID": "new_1778603555786_pt61v0",
+        "OBJECTID": "new_1778603555786_pt61v0",
+        "Name": "پلی‌گان جدید new_1778603555786_pt61v0",
+        "Shape_Area": 23189.967661874245
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              57.360933,
+              37.482215
+            ],
+            [
+              57.359732,
+              37.479185
+            ],
+            [
+              57.361319,
+              37.479253
+            ],
+            [
+              57.360933,
+              37.482215
+            ]
+          ]
+        ]
+      },
+      "id": "new_1778603555786_pt61v0"
+    },
+    {
+      "type": "Feature",
+      "id": "2000",
+      "geometry": {
+        "coordinates": [
+          [
+            57.33,
+            37.47
+          ],
+          [
+            57.34,
+            37.48
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "street_name": "Validation Street",
+        "OBJECTID": 2000
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mahalle_ID": "new_1778609345484_1k2e72",
+        "OBJECTID": "new_1778609345484_1k2e72",
+        "Name": "پلی‌گان جدید new_1778609345484_1k2e72",
+        "Shape_Area": 39942.547750462036
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              57.349425,
+              37.481257
+            ],
+            [
+              57.349403,
+              37.479008
+            ],
+            [
+              57.347151,
+              37.479485
+            ],
+            [
+              57.348417,
+              37.48182
+            ],
+            [
+              57.349425,
+              37.481257
+            ]
+          ]
+        ]
+      },
+      "id": "new_1778609345484_1k2e72"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "etag": "v1",
+    "lastModified": "2026-09-23T07:29:15.314Z",
+    "updatedAt": 1790148555314
+  },
+  "data": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "s-1",
+        "properties": {
+          "id": "s1",
+          "name": "Grand Central Boulevard",
+          "type": "Arterial Road",
+          "lanes": 6,
+          "speed_limit": 60,
+          "traffic_level": "High",
+          "surface": "Asphalt Grade A"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              51.384,
+              35.6892
+            ],
+            [
+              51.39,
+              35.6892
+            ],
+            [
+              51.398,
+              35.6892
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "s-2",
+        "properties": {
+          "id": "s2",
+          "name": "Valley Avenue",
+          "type": "Collector Street",
+          "lanes": 4,
+          "speed_limit": 50,
+          "traffic_level": "Moderate",
+          "surface": "Asphalt"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              51.3912,
+              35.694
+            ],
+            [
+              51.3912,
+              35.6892
+            ],
+            [
+              51.3912,
+              35.682
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "s-3",
+        "properties": {
+          "id": "s3",
+          "name": "Parkside Greenway",
+          "type": "Local Street & Bike Lane",
+          "lanes": 2,
+          "speed_limit": 30,
+          "traffic_level": "Low",
+          "surface": "Permeable Pavement"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              51.388,
+              35.694
+            ],
+            [
+              51.388,
+              35.6892
+            ],
+            [
+              51.388,
+              35.682
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}
