@@ -15,7 +15,8 @@ import {
   XMarkIcon,
   Bars3Icon
 } from '@heroicons/react/24/solid';
-const API_BASE = import.meta.env.VITE_API_BASE || '';
+import { API_BASE_URL } from '../../services/api';
+const API_BASE = API_BASE_URL;
 const MAHALLE_API_ROOT = API_BASE;
 const DataEditing = ({
   filteredFeatures = [],

@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import ErrorBoundary from './ErrorBoundary';
 import Login from './AuthComponents/Login';
-import { isStaticHost } from './services/api';
+import { shouldUseHashRouter } from './services/api';
 import './App.css';
 
 const CoreMap = lazy(() => import('./components/CoreMap'));
@@ -31,7 +31,7 @@ const queryClient = new QueryClient({
   },
 });
 
-const Router = isStaticHost() ? HashRouter : BrowserRouter;
+const Router = shouldUseHashRouter() ? HashRouter : BrowserRouter;
 
 // Protected Route Component for generic users
 const ProtectedRoute = ({ children }) => {

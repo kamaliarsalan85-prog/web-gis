@@ -1,9 +1,19 @@
 import axios from 'axios';
 import { ensureBrowserDbSeeded, handleLocalApiRequest } from './localBrowserDb.js';
 
-export const isStaticHost = () => {
-  const configuredBase = String(import.meta?.env?.VITE_API_BASE ?? '').trim();
-  if (configuredBase.length > 0) return false;
+export const API_BASE_URL = String(
+  import.meta?.env?.VITE_API_BASE_URL ||
+  import.meta?.env?.VITE_API_BASE ||
+  ''
+).trim().replace(/\/+$/, '');
+
+export const SOCKET_BASE_URL = String(
+  import.meta?.env?.VITE_SOCKET_URL ||
+  API_BASE_URL ||
+  (typeof window !== 'undefined' ? window.location.origin : '')
+).trim().replace(/\/+$/, '');
+
+export const shouldUseHashRouter = () => {
   if (typeof window === 'undefined' || !window.location) return false;
   const hostname = String(window.location.hostname || '').toLowerCase();
   const protocol = String(window.location.protocol || '').toLowerCase();
@@ -19,9 +29,14 @@ export const isStaticHost = () => {
   );
 };
 
+export const isStaticHost = () => {
+  if (API_BASE_URL.length > 0) return false;
+  return shouldUseHashRouter();
+};
+
 export const redirectToLogin = () => {
   if (typeof window === 'undefined') return;
-  if (isStaticHost()) {
+  if (shouldUseHashRouter()) {
     window.location.hash = '#/login';
   } else {
     window.location.href = '/login';
@@ -30,8 +45,8 @@ export const redirectToLogin = () => {
 
 let useLocalDbFallback = isStaticHost();
 
-// Pre-seed the browser database on static hosts
-if (typeof window !== 'undefined') {
+// Pre-seed the browser database on static hosts without an external backend
+if (typeof window !== 'undefined' && API_BASE_URL.length === 0) {
   ensureBrowserDbSeeded().catch(() => {});
 }
 
@@ -88,6 +103,7 @@ const attachInterceptors = (instance) => {
   instance.interceptors.response.use(
     async (response) => {
       if (
+        API_BASE_URL.length === 0 &&
         String(response.config?.url || '').includes('/api/') &&
         isMissingBackendResponse(response)
       ) {
@@ -99,6 +115,7 @@ const attachInterceptors = (instance) => {
     async (error) => {
       const config = error.config;
       if (
+        API_BASE_URL.length === 0 &&
         config &&
         !config._retriedLocalDb &&
         String(config.url || '').includes('/api/') &&
@@ -123,7 +140,7 @@ const attachInterceptors = (instance) => {
 };
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE || '',
+  baseURL: API_BASE_URL,
 });
 
 attachInterceptors(api);

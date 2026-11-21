@@ -14,11 +14,10 @@ import {
 } from '@heroicons/react/24/solid';
 import { motion, AnimatePresence } from 'framer-motion';
 import Particles from './Particles'; // مسیر را بر اساس ساختار پروژه‌ات تنظیم کن
-import { isStaticHost } from '../services/api';
+import { isStaticHost, API_BASE_URL, SOCKET_BASE_URL } from '../services/api';
 
-// ✅ پایه‌ی API و Socket از ENV یا هم‌اُریجین
-const API = import.meta.env.VITE_API_BASE || (typeof window !== 'undefined' ? '' : '');
-const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || (typeof window !== 'undefined' ? window.location.origin : '');
+const API = API_BASE_URL;
+const SOCKET_URL = SOCKET_BASE_URL;
 
 const fetchUsers = async () => {
   try {

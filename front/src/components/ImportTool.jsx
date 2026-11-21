@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
+import { API_BASE_URL } from '../services/api';
 
-// ✅ API bases from ENV (fallback to same-origin)
-const API = import.meta.env.VITE_API_BASE || (typeof window !== 'undefined' ? '' : '');
+const API = API_BASE_URL;
 const MAHALLE_API = API;
 
 

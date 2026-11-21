@@ -2,10 +2,9 @@ import React, { useState, useEffect, useCallback, useRef, useMemo, lazy, Suspens
 import { createPortal } from 'react-dom';
 import { MapContainer, TileLayer, LayersControl, useMap } from 'react-leaflet';
 import { useNavigate } from 'react-router-dom';
-import api, { safeGet, isStaticHost } from '../services/api';
+import api, { safeGet, isStaticHost, SOCKET_BASE_URL } from '../services/api';
 import { io } from 'socket.io-client';
-// ✅ Socket base URL from ENV or same-origin fallback
-const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || (typeof window !== 'undefined' ? window.location.origin : '');
+const SOCKET_URL = SOCKET_BASE_URL;
 import GeoJSONLayer from './GeoJSONLayer';
 import ImportTool from './ImportTool';
 import FeatureEditor from './FeatureEditor';

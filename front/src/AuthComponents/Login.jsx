@@ -7,9 +7,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import { motion } from 'framer-motion';
 import { UserIcon, LockClosedIcon, ArrowRightOnRectangleIcon } from '@heroicons/react/24/solid';
 import Particles from './Particles'; // مسیر را طبق پروژه‌ات تنظیم کن
+import { API_BASE_URL } from '../services/api';
 
-// ✅ API base از ENV یا مسیر نسبی (same-origin)؛ هیچ URL هاردکدی نداریم
-const API = import.meta.env.VITE_API_BASE || (typeof window !== 'undefined' ? '' : '');
+const API = API_BASE_URL;
 
 const Login = () => {
   const [username, setUsername] = useState('');

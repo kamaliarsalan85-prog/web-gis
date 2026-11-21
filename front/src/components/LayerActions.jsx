@@ -2,9 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import { useMap } from 'react-leaflet';
 import { toast } from 'react-toastify';
 import axios from 'axios';
+import { API_BASE_URL } from '../services/api';
 
-// ✅ API base from ENV (fallback to same-origin)
-const API = import.meta.env.VITE_API_BASE || (typeof window !== 'undefined' ? '' : '');
+const API = API_BASE_URL;
 
 
 const LayerActions = ({ layers, fetchLayers, drawMode, editMode, selectedLayerName }) => {

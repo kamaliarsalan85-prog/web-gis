@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - master
   workflow_dispatch:
 
 permissions:
@@ -27,11 +26,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
       - name: Install dependencies
-        run: npm install --no-audit --no-fund
+        run: npm ci
 
       - name: Build production bundle
+        env:
+          GITHUB_REPOSITORY_NAME: ${{ github.event.repository.name }}
+          VITE_API_BASE_URL: ${{ vars.VITE_API_BASE_URL }}
+          VITE_SOCKET_URL: ${{ vars.VITE_SOCKET_URL }}
         run: npm run build
 
       - name: Add SPA 404 fallback

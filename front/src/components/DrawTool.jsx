@@ -9,10 +9,9 @@ import area from '@turf/area';
 import kinks from '@turf/kinks';
 import unkinkPolygon from '@turf/unkink-polygon';
 import cleanCoords from '@turf/clean-coords';
-import { redirectToLogin } from '../services/api';
+import { redirectToLogin, API_BASE_URL } from '../services/api';
 
-// ✅ API bases from ENV (fallback to same-origin)
-const API = import.meta.env.VITE_API_BASE || (typeof window !== 'undefined' ? '' : '');
+const API = API_BASE_URL;
 const MAHALLE_API = API;
 
 

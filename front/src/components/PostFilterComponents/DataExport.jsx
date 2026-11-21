@@ -4,7 +4,8 @@ import { toast } from 'react-toastify';
 import shpwrite from '@mapbox/shp-write';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowDownTrayIcon, PlusCircleIcon } from '@heroicons/react/24/solid';
-const API_BASE = import.meta.env.VITE_API_BASE || '';
+import { API_BASE_URL } from '../../services/api';
+const API_BASE = API_BASE_URL;
 
 const DataExport = ({ filteredFeatures = [], activeLayerName, onRefresh }) => {
   const [newLayerName, setNewLayerName] = useState('');

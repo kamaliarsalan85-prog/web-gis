@@ -12,9 +12,9 @@ import unkinkPolygon from '@turf/unkink-polygon';
 import cleanCoords from '@turf/clean-coords';
 import { union } from '@turf/turf';
 import { toast } from 'react-toastify';
+import { API_BASE_URL } from '../services/api';
 
-// ✅ Bases from ENV (fallback to same-origin)
-const API_BASE = import.meta.env.VITE_API_BASE || (typeof window !== 'undefined' ? '' : '');
+const API_BASE = API_BASE_URL;
 const MAHALLE_API_ROOT = API_BASE;
 
 
