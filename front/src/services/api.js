@@ -2,10 +2,30 @@ import axios from 'axios';
 import { ensureBrowserDbSeeded, handleLocalApiRequest } from './localBrowserDb.js';
 
 export const isStaticHost = () => {
-  if (import.meta.env.VITE_API_BASE) return false;
-  if (typeof window === 'undefined') return false;
-  const { hostname, protocol } = window.location;
-  return hostname.endsWith('github.io') || protocol === 'file:';
+  const configuredBase = String(import.meta?.env?.VITE_API_BASE ?? '').trim();
+  if (configuredBase.length > 0) return false;
+  if (typeof window === 'undefined' || !window.location) return false;
+  const hostname = String(window.location.hostname || '').toLowerCase();
+  const protocol = String(window.location.protocol || '').toLowerCase();
+  return (
+    protocol === 'file:' ||
+    hostname.endsWith('.github.io') ||
+    hostname === 'github.io' ||
+    hostname.endsWith('.githubusercontent.com') ||
+    hostname.endsWith('.pages.dev') ||
+    hostname.endsWith('.netlify.app') ||
+    hostname.endsWith('.vercel.app') ||
+    hostname.endsWith('.gitlab.io')
+  );
+};
+
+export const redirectToLogin = () => {
+  if (typeof window === 'undefined') return;
+  if (isStaticHost()) {
+    window.location.hash = '#/login';
+  } else {
+    window.location.href = '/login';
+  }
 };
 
 let useLocalDbFallback = isStaticHost();

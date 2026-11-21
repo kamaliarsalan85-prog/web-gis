@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { io } from 'socket.io-client';
+import { redirectToLogin } from '../services/api';
 
 const API_BASE = import.meta.env.VITE_API_BASE || (typeof window !== 'undefined' ? '' : '');
 const MAHALLE_API_ROOT = API_BASE;
@@ -313,7 +314,7 @@ const FeatureEditor = ({ feature, layerName, layerVersion = null, storage, onSav
       const token = localStorage.getItem('token');
       if (!token) {
         toast.error('لطفاً دوباره وارد شوید');
-        window.location.href = '/login';
+        redirectToLogin();
         setLoading(false);
         return;
       }
@@ -545,7 +546,7 @@ const FeatureEditor = ({ feature, layerName, layerVersion = null, storage, onSav
         onClose();
       } else if (status === 401) {
         toast.error('لطفاً دوباره وارد شوید');
-        window.location.href = '/login';
+        redirectToLogin();
       } else {
         toast.error(`خطا در ذخیره: ${errorData?.error || error.message || 'نامشخص'}`);
       }
@@ -586,7 +587,7 @@ const FeatureEditor = ({ feature, layerName, layerVersion = null, storage, onSav
     const token = localStorage.getItem('token');
     if (!token) {
       toast.error('لطفاً دوباره وارد شوید');
-      window.location.href = '/login';
+      redirectToLogin();
       return;
     }
 

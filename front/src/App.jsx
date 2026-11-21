@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ToastContainer } from 'react-toastify';
@@ -6,10 +6,20 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import ErrorBoundary from './ErrorBoundary';
 import Login from './AuthComponents/Login';
-import CoreMap from './components/CoreMap';
-import AdminDashboard from './AuthComponents/AdminDashboard';
 import { isStaticHost } from './services/api';
 import './App.css';
+
+const CoreMap = lazy(() => import('./components/CoreMap'));
+const AdminDashboard = lazy(() => import('./AuthComponents/AdminDashboard'));
+
+const PageLoader = () => (
+  <div className="min-h-screen bg-slate-900 text-slate-100 flex items-center justify-center">
+    <div className="text-center">
+      <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-3" />
+      <p className="text-sm text-slate-300">در حال بارگذاری...</p>
+    </div>
+  </div>
+);
 
 // Create a client for React Query
 const queryClient = new QueryClient({
@@ -59,35 +69,37 @@ export default function App() {
     <ErrorBoundary>
       <QueryClientProvider client={queryClient}>
         <Router>
-          <Routes>
-            <Route
-              path="/login"
-              element={
-                <PublicRoute>
-                  <Login />
-                </PublicRoute>
-              }
-            />
-            <Route
-              path="/map"
-              element={
-                <ProtectedRoute>
-                  <CoreMap />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/admin"
-              element={
-                <AdminRoute>
-                  <AdminDashboard />
-                </AdminRoute>
-              }
-            />
-            {/* Fallback routes */}
-            <Route path="/" element={<Navigate to="/map" replace />} />
-            <Route path="*" element={<Navigate to="/map" replace />} />
-          </Routes>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route
+                path="/login"
+                element={
+                  <PublicRoute>
+                    <Login />
+                  </PublicRoute>
+                }
+              />
+              <Route
+                path="/map"
+                element={
+                  <ProtectedRoute>
+                    <CoreMap />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/admin"
+                element={
+                  <AdminRoute>
+                    <AdminDashboard />
+                  </AdminRoute>
+                }
+              />
+              {/* Fallback routes */}
+              <Route path="/" element={<Navigate to="/map" replace />} />
+              <Route path="*" element={<Navigate to="/map" replace />} />
+            </Routes>
+          </Suspense>
         </Router>
         <ToastContainer
           position="top-right"

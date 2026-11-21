@@ -25,7 +25,16 @@ const Tabs = ({ filteredFeatures, activeLayerName, onRefresh, layers, setAnalysi
   const [networkEndNameField, setNetworkEndNameField] = useState('Name');
   const [activeTab, setActiveTab] = useState('stats');
   const [isTabOpen, setIsTabOpen] = useState(true);
-  const userTools = JSON.parse(localStorage.getItem('tools') || '[]');
+  const userTools = (() => {
+    try {
+      const raw = localStorage.getItem('tools');
+      if (!raw || raw === 'undefined' || raw === 'null') return [];
+      const parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch {
+      return [];
+    }
+  })();
   const [editedProperties, setEditedProperties] = useState({});
   const [fieldFormula, setFieldFormula] = useState('');
   const [selectedField, setSelectedField] = useState('');

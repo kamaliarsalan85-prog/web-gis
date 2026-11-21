@@ -2,7 +2,11 @@ import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import * as turf from '@turf/turf';
 import { toast } from 'react-toastify';
 import { MapContainer, TileLayer, GeoJSON, useMap } from 'react-leaflet';
+import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+if (typeof window !== 'undefined' && !window.L) {
+  window.L = L;
+}
 import 'leaflet.heat';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapIcon, FireIcon, ArrowPathIcon, PlayIcon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';

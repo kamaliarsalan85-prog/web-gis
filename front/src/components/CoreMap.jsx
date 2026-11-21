@@ -23,6 +23,9 @@ import '@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css';
 import { useUndoRedo } from './useUndoRedo';
 import UndoRedoButtons from './UndoRedoButtons';
 import L from 'leaflet';
+if (typeof window !== 'undefined' && !window.L) {
+  window.L = L;
+}
 import { Resizable } from 'react-resizable';
 import 'react-resizable/css/styles.css';
 // --- Lazy Loading for Heavy Components ---
